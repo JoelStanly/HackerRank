@@ -7,6 +7,10 @@
 
 ### _*Count elements from a list to a dictionary*_
     from collections import Counter
-    stringsDict = dict(Counter(strings))
+    arrayDict = dict(Counter(array))
+
+
+### _*Signed Integer to Unsigned Integer*_
+    unsigned = signed + (1 << 32)
 
 ### _**_
