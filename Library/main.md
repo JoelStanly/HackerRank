@@ -13,4 +13,7 @@
 ### _*Signed Integer to Unsigned Integer*_
     unsigned = signed + (1 << 32)
 
+### _*To add value to each element in a list*_
+    array = [i+value  for i in array]
+
 ### _**_
