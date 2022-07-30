@@ -16,4 +16,8 @@
 ### _*To add value to each element in a list*_
     array = [i+value  for i in array]
 
+### _*Left and right Diagonal of a 2D square array*_
+    left = [arr[i][i] for i in range(size)]
+    right = [arr[i][size-i-1] for i in range(size)]
+
 ### _**_
