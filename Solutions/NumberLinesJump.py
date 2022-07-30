@@ -25,10 +25,7 @@ def kangaroo(x1, v1, x2, v2):
             return "NO"
     if((x1>x2 and v1>v2)or(x1<x2 and v1<v2)or (v1==v2)):
         return "NO"
-    
     n = (x2-x1)/(v2-v1)
-    print(n)
-    
     if(int(n)==n):
         return "YES"
     else:
