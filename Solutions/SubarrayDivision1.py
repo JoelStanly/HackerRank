@@ -5,7 +5,6 @@ import os
 import random
 import re
 import sys
-
 #
 # Complete the 'birthday' function below.
 #
@@ -16,9 +15,17 @@ import sys
 #  3. INTEGER m
 #
 
-def birthday(s, d, m):
+def birthday(s, d, m):    
+    count = 0
+    i = 0
+    j = m
+    while(j<=len(s)):
+        if(sum(s[i:j])==d):
+            count += 1
+        j += 1
+        i += 1
+    return count
     
-    return
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
