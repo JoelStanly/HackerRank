@@ -20,4 +20,10 @@
     left = [arr[i][i] for i in range(size)]
     right = [arr[i][size-i-1] for i in range(size)]
 
+### _*A square (might bepossible on normal 2D arrays) matrix reveresed by column and rows, The elements possible on a position are*_
+    matrix[i][j],
+    matrix[i][length-j],
+    matrix[length-i][j],
+    matrix[length-i][length-j]
+
 ### _**_
