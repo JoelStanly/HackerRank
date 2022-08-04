@@ -26,4 +26,26 @@
     matrix[length-i][j],
     matrix[length-i][length-j]
 
+### _*Empty array initialization difference*_
+#### _*Without Referencing*_
+    arr = [[] for i in range(3)]
+    arr[0].append(2)
+
+##### *Result*
+    [[2],[],[]]
+
+#### *With Referencing*
+    arr = [[]*3]
+    arr[0].append(2)
+
+##### *Result*
+    [[2],[2],[2]]
+
+#### *Explanation*
+ In " []*3 ", all the empty list references the same list. That's y if an list is updated then all the lists are updated.
+ In " [] for i in range(3) ", all the empty list doesn't point at a single point.
+
+#### *Stack Overflow*
+[Appending to 2D lists in Python [duplicate]](https://stackoverflow.com/questions/7745562/appending-to-2d-lists-in-python)
+
 ### _**_
